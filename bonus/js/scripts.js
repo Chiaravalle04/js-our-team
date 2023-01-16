@@ -65,6 +65,12 @@ for (let i = 0; i < members.length; i++) {
 
     myUl.append(myLi);
 
+    let myImg = document.createElement('img');
+
+    myLi.append(myImg);
+
+    myImg.src = 'img/' + members[i].img;
+
     let myPName = document.createElement('p');
 
     myLi.append(myPName);
@@ -76,12 +82,6 @@ for (let i = 0; i < members.length; i++) {
     myLi.append(myPRole);
 
     myPRole.innerHTML = 'Ruolo:' + " " + '[ ' + members[i].role + ' ]'; // stampa nel DOM il ruolo
-
-    let myPImg = document.createElement('p');
-
-    myLi.append(myPImg);
-
-    myPImg.innerHTML = 'Img:' + " " + '[ ' + members[i].img + ' ]'; // stampa nel DOM l'immagine
 
     let myHr = document.createElement('hr');
 

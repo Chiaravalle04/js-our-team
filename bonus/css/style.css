@@ -43,3 +43,8 @@ hr {
     margin: 2rem 0;
     border: 0.1rem dashed white;
 }
+
+img {
+    width: 10rem;
+    height: 10rem;
+}
