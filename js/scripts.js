@@ -69,19 +69,19 @@ for (let i = 0; i < members.length; i++) {
 
     myLi.append(myPName);
 
-    myPName.innerHTML = 'Nome:' + " " + members[i].name; // stampa nel DOM il nome
+    myPName.innerHTML = 'Nome:' + " " + '[ ' + members[i].name + ' ]'; // stampa nel DOM il nome
 
     let myPRole = document.createElement('p');
 
     myLi.append(myPRole);
 
-    myPRole.innerHTML = 'Ruolo:' + " " + members[i].role; // stampa nel DOM il ruolo
+    myPRole.innerHTML = 'Ruolo:' + " " + '[ ' + members[i].role + ' ]'; // stampa nel DOM il ruolo
 
     let myPImg = document.createElement('p');
 
     myLi.append(myPImg);
 
-    myPImg.innerHTML = 'Img:' + " " + members[i].img; // stampa nel DOM l'immagine
+    myPImg.innerHTML = 'Img:' + " " + '[ ' + members[i].img + ' ]'; // stampa nel DOM l'immagine
 
     let myHr = document.createElement('hr');
 
