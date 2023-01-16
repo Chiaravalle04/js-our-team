@@ -47,44 +47,30 @@ const members = [
 
 const myContainer = document.getElementById('container');
 
-let myUl = document.createElement('ul');
-
-myContainer.append(myUl);
-
 for (let i = 0; i < members.length; i++) {
 
-    // stampa in console
-    console.log('Nome:' + " " + members[i].name);
-    console.log('Ruolo:' + " " + members[i].role);
-    console.log('Immagine:' + " " + members[i].img);
+    let myCards = document.createElement('div');
 
-    console.log('-------------');
+    myContainer.append(myCards);
 
-    // stampa nel DOM
-    let myLi = document.createElement('li');
-
-    myUl.append(myLi);
+    myCards.classList.add('card');
 
     let myImg = document.createElement('img');
-
-    myLi.append(myImg);
+    
+    myCards.append(myImg);
 
     myImg.src = 'img/' + members[i].img;
 
     let myPName = document.createElement('p');
 
-    myLi.append(myPName);
+    myCards.append(myPName);
 
-    myPName.innerHTML = 'Nome:' + " " + '[ ' + members[i].name + ' ]'; // stampa nel DOM il nome
+    myPName.innerHTML = members[i].name;
 
     let myPRole = document.createElement('p');
 
-    myLi.append(myPRole);
+    myCards.append(myPRole);
 
-    myPRole.innerHTML = 'Ruolo:' + " " + '[ ' + members[i].role + ' ]'; // stampa nel DOM il ruolo
-
-    let myHr = document.createElement('hr');
-
-    myLi.append(myHr);
+    myPRole.innerHTML = members[i].role;
 
 };
