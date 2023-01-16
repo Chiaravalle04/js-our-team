@@ -44,3 +44,13 @@ const members = [
     }
 
 ];
+
+for (let i = 0; i < members.length; i++) {
+
+    console.log('Nome:' + " " + members[i].name);
+    console.log('Ruolo:' + " " + members[i].role);
+    console.log('Immagine:' + " " + members[i].img);
+
+    console.log('-------------')
+
+}
