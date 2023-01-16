@@ -5,7 +5,41 @@
     box-sizing: border-box;
 }
 
-/* Regole Generali */
+/* Font */
+* {
+    font-family: 'Open Sans', sans-serif;
+}
 
+/* Regole Generali */
+body {
+    background-color: black;
+}
+
+* {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+}
 
 /* Main */
+#container {
+    padding: 0 6rem 0 3rem;
+}
+
+p {
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+h2 {
+    margin: 2rem 0 1rem; 
+}
+
+hr {
+    margin: 2rem 0;
+    border: 0.1rem dashed white;
+}
